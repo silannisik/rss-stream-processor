@@ -2,7 +2,6 @@ package kpn.data.assignment.process;
 
 import kpn.data.assignment.model.Outage;
 import org.apache.commons.lang3.StringUtils;
-
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 import javax.xml.stream.XMLEventReader;
