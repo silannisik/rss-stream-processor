@@ -3,7 +3,6 @@ package kpn.data.assignment.service;
 import org.xml.sax.SAXException;
 
 import javax.annotation.WillNotClose;
-import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
@@ -19,5 +18,5 @@ public interface StreamProcessor extends AutoCloseable {
 
     void process(@WillNotClose InputStream source, @WillNotClose OutputStream customerSink,
                  @WillNotClose OutputStream businessSink)
-            throws IOException, XMLStreamException, JAXBException, ParserConfigurationException, SAXException, ExecutionException, InterruptedException, TimeoutException;
+            throws IOException, XMLStreamException, ParserConfigurationException, SAXException, ExecutionException, InterruptedException, TimeoutException;
 }
